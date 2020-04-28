@@ -11,6 +11,7 @@ pool:
 
 variables:
   buildConfiguration: 'Release'
+  path : '.\WebApplication1\WebApplication1.sln'
 
 steps:
 - script: dotnet build --configuration $(buildConfiguration)
