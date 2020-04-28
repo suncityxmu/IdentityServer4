@@ -14,5 +14,5 @@ variables:
   path : '.\WebApplication1\WebApplication1.sln'
 
 steps:
-- script: dotnet build --configuration $(buildConfiguration)
-  displayName: 'dotnet build $(buildConfiguration)'
+- script: dotnet build $(path)
+  displayName: 'dotnet build $(buildConfiguration) $(path)'
